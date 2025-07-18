@@ -9,8 +9,10 @@ const Home: React.FC = () => {
   return (
     <div>
       <Banner />
-      <Product />
-      <About />
+      <div className="max-w-[1200px] mx-auto px-4">
+        <Product />
+        <About />
+      </div>
       <FruitBundle />
       <Testimonial />
       <HarvestBlog />
