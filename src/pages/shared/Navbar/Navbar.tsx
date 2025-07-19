@@ -2,6 +2,7 @@ import { MdOutlineFavorite } from "react-icons/md";
 import logo from "../../../assets/logo.png";
 import { HiShoppingCart } from "react-icons/hi";
 import { Link } from "react-router";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar: React.FC = () => {
   return (
@@ -31,6 +32,14 @@ const Navbar: React.FC = () => {
 
               <li className="border py-3 px-6 rounded cursor-pointer font-semibold border-gray-500 text-gray-600">
                 Sign In
+              </li>
+            </ul>
+            <ul className="lg:hidden flex gap-6 text-gray-700">
+              <li className="cursor-pointer">
+                <HiShoppingCart />
+              </li>
+              <li className="cursor-pointer">
+                <GiHamburgerMenu />
               </li>
             </ul>
           </div>

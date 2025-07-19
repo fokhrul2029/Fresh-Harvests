@@ -1,69 +1,63 @@
-# React + TypeScript + Vite
+# Fresh-Harvests
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Fresh-Harvests** is a modern eCommerce frontend application built with React, TypeScript, and Tailwind CSS. It features a fully responsive design with a dynamic Product Listing Page showcasing all available items and an interactive Product Details Page that provides comprehensive information about each product, including images, descriptions, and pricing.
 
-Currently, two official plugins are available:
+## Hyper links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live URL:** - https://fresh-harvests-wine.vercel.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Product Listing Page**
+- **Product Details Page**
+- **Fully Responsive Design**
+- **Modern UI/UX**
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Tech Stack
+
+- **React** (with TypeScript)
+- **Tailwind CSS**
+- **React Icons**
+- **Redux and RTK Query**
+- **Vite** (for fast development)
+
+---
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+```bash
+VITE_API=https://code-commando.com
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Follow these steps to set up the project locally:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/fokhrul2029/Fresh-Harvests.git
+cd fresh-harvests
+```
+
+2. **Install dependency**
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Run the application**
+
+```bash
+npm run dev
+# or
+yarn dev
 ```
