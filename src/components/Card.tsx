@@ -1,22 +1,32 @@
 import { Link } from "react-router";
 
-const Card: React.FC = () => {
+interface CardProps {
+  product: {
+    productName: string;
+    price: number;
+    id: string;
+    images: string[];
+  };
+}
+
+const Card: React.FC<CardProps> = ({ product }) => {
+  const { productName, price, id, images } = product;
   return (
     <Link
-      to="/hello"
-      className="bg-white rounded-[20px] shadow-2xs hover:shadow-2xl shadow-[#092B5E0F] p-4 max-w-[282px] cursor-pointer inline-block"
+      to={`/product/${id}`}
+      className="bg-white rounded-[20px] shadow-2xs hover:shadow-2xl shadow-[#092B5E0F] p-4 w-[282px] cursor-pointer inline-block"
     >
       <div className="bg-gray-50 rounded-lg py-[10px] px-3 flex justify-center cursor-pointer">
         <img
-          src="https://i.ibb.co.com/RcLP3xZ/Onion.png"
+          src={images[0]}
           alt="Mushroom"
           className="flex items-center max-w-[258px] h-[208px] object-cover"
         />
       </div>
 
       <div className="text-center pt-3 flex flex-col gap-3">
-        <h3 className="font-medium text-lg text-[#212337]">Mushroom</h3>
-        <p className="text-[#4A4A52] text-lg">$2.3/kg</p>
+        <h3 className="font-medium text-lg text-[#212337]">{productName}</h3>
+        <p className="text-[#4A4A52] text-lg">${price}/kg</p>
 
         <button
           onClick={(e) => e.preventDefault()}
