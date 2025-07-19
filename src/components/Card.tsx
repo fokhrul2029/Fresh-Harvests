@@ -14,7 +14,7 @@ const Card: React.FC<CardProps> = ({ product }) => {
   return (
     <Link
       to={`/product/${id}`}
-      className="bg-white rounded-[20px] shadow-2xs hover:shadow-2xl shadow-[#092B5E0F] p-4 w-[282px] cursor-pointer inline-block"
+      className="bg-white rounded-[20px] shadow-2xs hover:shadow-2xl shadow-[#092B5E0F] p-4 w-[160px] lg:w-[282px] cursor-pointer inline-block col-span-1"
     >
       <div className="bg-gray-50 rounded-lg py-[10px] px-3 flex justify-center cursor-pointer">
         <img

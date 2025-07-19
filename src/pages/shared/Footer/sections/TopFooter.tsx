@@ -27,7 +27,7 @@ const TopFooter: React.FC = () => {
       <div className="grid grid-cols-4 md:grid-cols-11 gap-8">
         <div className="flex flex-col justify-between col-span-4">
           <img className="max-w-[230px]" src={img} alt="" />
-          <div className="flex flex-col gap-3">
+          <div className="md:flex flex-col gap-3 hidden">
             <strong>Download App</strong>
             <img className="max-w-[295px]" src={storeImg} alt="" />
           </div>
@@ -66,13 +66,23 @@ const TopFooter: React.FC = () => {
                 <span>Tanjung Sari Street, Pontianak, Indonesia </span>
               </a>
             </li>
-            <li className="flex flex-col justify-between pt-3">
+            <li className="hidden md:flex  flex-col justify-between pt-3">
               <div className="flex flex-col gap-3">
                 <strong>Accepted Payment Methods:</strong>
                 <img className="max-w-[295px]" src={payment} alt="" />
               </div>
             </li>
           </ul>
+        </div>
+        <div className="flex md:hidden flex-col sm:flex-row gap-6 col-span-4">
+          <div className="flex flex-col gap-3">
+            <strong>Accepted Payment Methods:</strong>
+            <img className="max-w-[295px]" src={payment} alt="" />
+          </div>
+          <div className="flex flex-col gap-3">
+            <strong>Download App</strong>
+            <img className="max-w-[295px]" src={storeImg} alt="" />
+          </div>
         </div>
       </div>
     </div>

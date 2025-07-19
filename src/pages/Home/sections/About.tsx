@@ -6,8 +6,8 @@ import img from "../../../assets/about-us.png";
 
 const About: React.FC = () => {
   return (
-    <div className="flex justify-between items-center gap-4">
-      <img className="w-[686px]" src={img} alt="" />
+    <div className="flex flex-col lg:flex-row justify-between items-center gap-4 pb-8">
+      <img className="w-full lg:w-[686px]" src={img} alt="" />
       <div className="flex flex-col gap-4 items-start">
         <Block>About us</Block>
         <Title>About Fresh Harvest</Title>

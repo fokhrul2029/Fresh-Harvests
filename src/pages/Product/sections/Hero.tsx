@@ -41,8 +41,8 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className="flex gap-4 items-center justify-between py-10">
-      <img className="w-[566px]" src={images?.[0]} alt="" />
+    <div className="flex gap-4 items-center flex-col lg:flex-row justify-between py-10">
+      <img className="w-full lg:w-[566px]" src={images?.[0]} alt="" />
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-4 items-start">
           <Block>Fruits</Block>

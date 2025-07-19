@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const BottomFooter: React.FC = () => {
   return (
-    <div className="py-8 flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
+    <div className="py-8 flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-4">
       <p className="text-sx font-medium text-[#212337]">
         © Copyright 2024, All Rights Reserved by Banana Studio
       </p>

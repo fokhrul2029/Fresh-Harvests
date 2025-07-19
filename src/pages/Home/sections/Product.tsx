@@ -52,7 +52,7 @@ const Product: React.FC = () => {
           )}
         </div>
       </div>
-      <div className="gird grid-cols-2 md:grid-cols-4 gap-6 py-4 justify-between text-center">
+      <div className="gird grid-cols-2 lg:grid-cols-4 gap-6 py-4 justify-between text-center">
         {isLoading ? (
           <h1>Loading</h1>
         ) : error ? (

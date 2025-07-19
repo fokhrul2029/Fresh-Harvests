@@ -1,5 +1,5 @@
 import Hero from "./sections/Hero";
-import RelatedProducts from "./sections/Relatedproducts";
+import RelatedProducts from "./sections/RelatedProducts";
 
 const Product: React.FC = () => {
   return (

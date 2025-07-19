@@ -58,7 +58,7 @@ const Testimonial: React.FC = () => {
       </div>
       <div>
         {/* Testimonial Content */}
-        <div className="relative h-[400px] overflow-hidden">
+        <div className="relative h-[800px] md:h-[400px] overflow-hidden">
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
@@ -70,7 +70,7 @@ const Testimonial: React.FC = () => {
                   : "translate-x-full opacity-0"
               }`}
             >
-              <div className="flex items-center gap-16">
+              <div className="flex flex-col md:flex-row items-center gap-16">
                 {/* Avatar */}
 
                 <img

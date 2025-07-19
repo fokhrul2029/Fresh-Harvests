@@ -18,7 +18,7 @@ const RelatedProducts: React.FC = () => {
           aspernatur, eos harum eveniet corrupti. Maiores nemo ea amet eveniet.
         </Layout>
       </div>
-      <div className="pt-6 flex justify-between items-center gap-6">
+      <div className="pt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between items-center gap-6">
         {isLoading ? (
           <h1>Loading...</h1>
         ) : error ? (
